@@ -1,0 +1,40 @@
+
+<!doctype html>
+<html>
+  <head>
+    {% include head.html %}
+    {% feed_meta %}
+    {% seo %}
+  </head>
+
+  <body>
+  <!-- ======= Header ======= -->
+    <header id="header" class="absolute-top">
+    <div class="container d-flex align-items-center justify-content-between">
+
+      <h1 class="logo"><a href="index.html">Hire William Friend!</a></h1>
+
+    {% include navigation.html %}
+
+    </div>
+    </header><!-- End Header -->
+  
+    {{ content }}
+  
+    <main id="main" class="main">
+    
+        {% include about.html %}
+        {% include portfolio.html %}
+        {% include contact.html %}    
+        </main>
+  
+</body>
+  
+
+
+    <footer>
+      {% include footer.html %}
+    </footer>
+
+</body>
+</html>

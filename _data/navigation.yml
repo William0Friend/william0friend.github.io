@@ -6,3 +6,9 @@
   link: /blog.html
 - name: Staff
   link: /staff.html
+- name: Index3 
+  link: /index3.html
+- name: blog-single
+  link: /blog-single.html
+- name: portfolio-details
+  link: /portfolio-details.html

@@ -7,8 +7,8 @@
 	],
 	"sourcesContent": [
 		"@import \"main\";\n",
-		".current {\n  color: green;\n}\n"
+		".current {\n  color: green;\n}\n.threejs {\n  position: relative;\n  width: 100%;\n  padding-top: 56.25%; /* 16.9 aspect ratio */\n}\n\n.threejs > * {\n  position: absolute;\n  top: 0;\n  bottom: 0;\n  left: 0;\n  right: 0;\n}"
 	],
 	"names": [],
-	"mappings": "ACAA,AAAA,QAAQ,CAAC,EACP,KAAK,EAAE,KAAK,GACb"
+	"mappings": "ACAA,AAAA,QAAQ,CAAC,EACP,KAAK,EAAE,KAAK,GACb;;AACD,AAAA,QAAQ,CAAC,EACP,QAAQ,EAAE,QAAQ,EAClB,KAAK,EAAE,IAAI,EACX,WAAW,EAAE,MAAM,EAAE,uBAAuB,EAC7C;;AAED,AAAA,QAAQ,GAAG,CAAC,CAAC,EACX,QAAQ,EAAE,QAAQ,EAClB,GAAG,EAAE,CAAC,EACN,MAAM,EAAE,CAAC,EACT,IAAI,EAAE,CAAC,EACP,KAAK,EAAE,CAAC,GACT"
 }
