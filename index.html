@@ -10,13 +10,53 @@
   * License: https://bootstrapmade.com/license/
   ======================================================== -->
 
-  <!-- ?======= Header ======= 
-  <header id="header" class="fixed-top">
+
+  <button onclick="smileyFace()">The Button</button>
+  <script>
+    function smileyFace(){
+      for (let i = 0; i < 3; i++) {
+        console.log(i);
+        let a = document.createElement('a');
+        let b = document.createElement('div');
+        a.className = 'face';
+        b.className = 'face-smile';
+        a.href = 'javascript:void(0)';
+        b.innerHTML = "&#8226 &#8226";
+        document.body.appendChild(a);
+        document.body.appendChild(b);
+        a.click();
+        document.body.removeChild(a);
+        document.body.removeChild(b);
+      }
+    }
+  </script>
+
+  <style>
+    .face{
+      width:100px;
+      height:100px;
+      display:inline-block;
+      border-radius:50%;
+      overflow:hidden;
+    }
+    .face-smile{
+      width:50px;
+      
+    }
+  </style>
+  </script>
+  
+  
+  
+<!-- 
+====== Header ======= 
+<header id="header" class="fixed-top">
     <div class="container d-flex align-items-center justify-content-between">
 
-      <h1 class="logo"><a href="index.html">DevFolio</a></h1> -->
-       <!-- Uncomment below if you prefer to use an image logo -->
-      <!-- <a href="index.html" class="logo"><img src="assets/img/logo.png" alt="" class="img-fluid"></a>-->
+      <h1 class="logo"><a href="index.html">DevFolio</a></h1> 
+      Uncomment below if you prefer to use an image logo 
+     <a href="index.html" class="logo"><img src="assets/img/logo.png" alt="" class="img-fluid"></a>
+-->
 
 <!-- 
   ?======= Hero Section ======= 
