@@ -13,35 +13,31 @@
 
   <button onclick="smileyFace()">The Button</button>
   <script>
+    let count = 0;
+    if(document.querySelector("button").onclick){
+      count = count + 1;
+    }
     function smileyFace(){
-      for (let i = 0; i < 3; i++) {
+      for (let i = 0; i < count; i++) {
         console.log(i);
-        let a = document.createElement('a');
         let b = document.createElement('div');
-        a.className = 'face';
         b.className = 'face-smile';
-        a.href = 'javascript:void(0)';
-        b.innerHTML = "&#8226 &#8226";
-        document.body.appendChild(a);
-        document.body.appendChild(b);
-        a.click();
-        document.body.removeChild(a);
-        document.body.removeChild(b);
+        for(let j = 0; j < i; j++){
+          b.innerHTML = "*";
+        }
+        document.body.append(b);
+        //document.body.removeChild(b);
       }
     }
   </script>
 
   <style>
-    .face{
+    .face-smile{
       width:100px;
       height:100px;
       display:inline-block;
       border-radius:50%;
       overflow:hidden;
-    }
-    .face-smile{
-      width:50px;
-      
     }
   </style>
   </script>
