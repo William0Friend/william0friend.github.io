@@ -4,70 +4,8 @@
 ---
 
   <!-- =======================================================
-  * Template Name: DevFolio - v4.7.1
-  * Template URL: https://bootstrapmade.com/devfolio-bootstrap-portfolio-html-template/
-  * Author: BootstrapMade.com
-  * License: https://bootstrapmade.com/license/
+  * Author: William Friend
+  * License: https://william0friend.github.io
   ======================================================== -->
 
 
-  <button onclick="smileyFace()">The Button</button>
-  <script>
-    let count = 0;
-    if(document.querySelector("button").onclick){
-      count = count + 1;
-    }
-    function smileyFace(){
-      for (let i = 0; i < count; i++) {
-        console.log(i);
-        let b = document.createElement('div');
-        b.className = 'face-smile';
-        for(let j = 0; j < i; j++){
-          b.innerHTML = "*";
-        }
-        document.body.append(b);
-        //document.body.removeChild(b);
-      }
-    }
-  </script>
-
-  <style>
-    .face-smile{
-      width:100px;
-      height:100px;
-      display:inline-block;
-      border-radius:50%;
-      overflow:hidden;
-    }
-  </style>
-  </script>
-  
-  
-  
-<!-- 
-====== Header ======= 
-<header id="header" class="fixed-top">
-    <div class="container d-flex align-items-center justify-content-between">
-
-      <h1 class="logo"><a href="index.html">DevFolio</a></h1> 
-      Uncomment below if you prefer to use an image logo 
-     <a href="index.html" class="logo"><img src="assets/img/logo.png" alt="" class="img-fluid"></a>
--->
-
-<!-- 
-  ?======= Hero Section ======= 
-  <div id="hero" class="hero route bg-image" style="background-image: url(assets/img/hero-bg.jpg)">
-    <div class="overlay-itro"></div>
-    <div class="hero-content display-table">
-      <div class="table-cell">
-        <div class="container">
-          <p class="display-6 color-d">Hello, world!</p>
-          <h1 class="hero-title mb-4">I am William Friend</h1>
-          <p class="hero-subtitle"><span class="typed" data-typed-items="Engineer, Developer, Hacker"></span></p>
-          <<p class="pt-3"><a class="btn btn-primary btn js-scroll px-4" href="#about" role="button">Learn More</a></p>
-        </div>
-      </div>
-    </div>
-  </div> End Hero Section
-
- -->
