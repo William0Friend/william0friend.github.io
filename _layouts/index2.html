@@ -1,0 +1,43 @@
+---
+---
+<!doctype html>
+<html>
+  <head>
+    {% include head2.html %}
+    {% feed_meta %}
+    {% seo %}
+  </head>
+
+  <body>
+  <!-- ======= Header ======= -->
+    <header id="header" class="absolute-top">
+
+      <!-- <h1 class="logo m-4"><a href="index.html">William Friend Portfolio Landing Page</a></h1> -->
+
+    {% include navbar.html %}
+
+    </header><!-- End Header -->
+  
+    
+
+    {{ content }}
+  
+    <main id="main" class="main" style="background-color: slategray;">
+    
+        {% include hero2.html %}
+        {% include portfolio.html %}
+        {% include about2.html %}
+        {% include contact_FreeForm.html %}    
+        
+    </main>
+  
+</body>
+  
+
+
+    <footer>
+      {% include footer.html %}
+    </footer>
+
+</body>
+</html>
