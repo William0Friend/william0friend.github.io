@@ -1,0 +1,63 @@
+
+/*
+.php-email-form .error-message {
+  display: none;
+  color: #000;
+  background: #ed3c0d;
+  text-align: center;
+  padding: 15px;
+  font-weight: 600;
+}
+.php-email-form .sent-message {
+  display: none;
+  color: #000;
+  background: #18d26e;
+  text-align: center;
+  padding: 15px;
+  font-weight: 600;
+}
+.php-email-form .loading {
+  display: none;
+  background: #000;
+  text-align: center;
+  padding: 15px;
+}
+
+.php-email-form .loading:before {
+  content: "";
+  display: inline-block;
+  border-radius: 50%;
+  width: 24px;
+  height: 24px;
+  margin: 0 10px -6px 0;
+  border: 3px solid #18d26e;
+  border-top-color: #111;
+  -webkit-animation: animate-loading 1s linear infinite;
+  animation: animate-loading 1s linear infinite;
+}
+.php-email-form input, .php-email-form textarea {
+  border-radius: 0;
+  box-shadow: none;
+  font-size: 14px;
+}
+.php-email-form input:focus, .php-email-form textarea:focus {
+  border-color: #78ff00;
+}
+.php-email-form input {
+  padding: 10px 15px;
+}
+.php-email-form textarea {
+  padding: 12px 15px;
+  margin-bottom: 0;
+}
+.php-email-form button[type=submit] {
+  background: #78ff00;
+  border: 0;
+  padding: 10px 24px;
+  color: #000;
+  transition: 0.4s;
+}
+.php-email-form button[type=submit]:hover {
+  background: #3393ff;
+}
+*/
