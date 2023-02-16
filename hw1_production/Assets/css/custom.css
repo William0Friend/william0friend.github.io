@@ -1,0 +1,54 @@
+﻿:root {
+    --main-bg-color: slategray;
+    --main-font-color: black;
+}
+
+body {
+    background-color: var(--main-bg-color,seagreen);
+}
+
+
+img.banner {
+    width: 100%;
+    height: auto;
+    aspect-ratio: attr(width) / attr(height);
+}
+
+footer a{
+    color: black;
+}
+
+
+#outer {
+    /*border: 1px dotted #F00;*/
+    position: absolute;
+    top: 105px;
+    right: 0px;
+    left: 0px;
+    padding: 5px;
+}
+
+#inner {
+    border: 1px thick #111;
+    margin: 0 auto;
+    text-align: center;
+    width: auto;
+    padding: 5px;
+}
+
+/*testimonial*/
+
+
+/*video*/
+video {
+    position: relative;
+    width: 100%;
+}
+
+/*
+    table
+*/
+table {
+    position: relative;
+    width: 100%;
+}
