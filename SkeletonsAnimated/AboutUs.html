@@ -1,0 +1,495 @@
+﻿<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--<meta
+        name="viewport"
+        content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    >-->
+    <title>Skeletons</title>
+    <!-- add icon link -->
+    <link type="image/svg" href="./Assets/svg/skull_logo.svg" rel="icon">
+    <!-- Bootstrap 5.0-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+    <!-- Fonts -->
+    <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
+    <!-- Progress bar is in jquery so...-->
+    <!-- Jquery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+    <!-- Override bootstrap, with higher specificity -->
+    <!-- my css and javascript-->
+    <!-- Main style sheet for every page -->
+    <link type="text/css" href="./Assets/css/styles.css" rel="stylesheet">
+    <!-- Scroll magic js, hides and shows elements on scroll with js and css -->
+    <script src="./Assets/javascript/scrollMagic.js" defer></script>
+    <!-- Scroll magic css, hides and shows elements on scroll with js and css -->
+    <link type="text/css" href="./Assets/css/scrollMagic.css" rel="stylesheet">
+    <!-- button wiggle -->
+    <link type="text/css" href="./Assets/css/btn-wiggle.css" rel="stylesheet">
+</head>
+
+<body>
+
+
+
+
+    <header>
+        <!--Navbar-->
+        <section>
+            <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+
+                <div class="container-fluid">
+                    <a class="navbar-brand" href="#">Skeletons.com</a>
+                    <button class="navbar-toggler" data-bs-target="#navbarNavAltMarkup" data-bs-toggle="collapse" type="button" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div id="navbarNavAltMarkup" class="collapse navbar-collapse">
+                        <div class="navbar-nav">
+                            <a class="nav-link" href="./homepage.html" title="Click me I work!" aria-current="page">Home</a>
+                            <a class="nav-link disabled" href="#">Buy</a>
+                            <a class="nav-link disabled" href="#">Sell</a>
+                            <a class="nav-link active" href="./AboutUs.html" title="Click me I work!">About</a>
+                            <a class="nav-link disabled" href="#">FAQ</a>
+                            <a class="nav-link disabled" href="#">Developers</a>
+                            <a class="nav-link disabled" href="#">Login/Signup</a>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+        </section>
+
+
+
+        <!-- �	Banner -->
+        <section>
+            <div id="outer container-fluid">
+                <div id="inner">
+                    <img id="banner" class="banner" src="./Assets/svg/Skeletons_com_png.png" alt="Skeletons.com Logo" loading="lazy">
+                </div>
+            </div>
+        </section>
+
+    </header>
+
+
+
+
+    <!--Mission statement JumboTron Light-->
+    <article class="hidden">
+        <div class="p-5 mb-4 bg-light rounded-3">
+            <div class="container py-5">
+                <h1 class="display-5 fw-bold text-center">Skeletons.com Mission Statement</h1>
+                <p class="col-md-8 fs-4">
+                    Skeletons.com mission is to empower independant business owners, dreamers,
+                    non-technical creatives, or anyone who may want to buy or sell their skeleton, to connect with
+                    developers, engineers, scientists, and programmers who also want to buy or sell their skeleton.
+                <p class="text-center">
+                    Skeletons.com, your one stop skeleton shop!
+                    <ul class="justify-content-center">
+                        <li> All payments handled through stripe, square, or crypto.</li>
+                        <li> Both Public and Anonymous skeleton transactions are avalible.</li>
+                    </ul>
+                </p>
+                </p>
+                <p class="text-center">
+                    <button id="AboutUsFirstBuyButtonJumbotronLight" class="btn btn-primary btn-lg ml-5 " type="button" title="I want to buy a skeleton">
+                        Buy
+
+                    </button>
+                    <button id="AboutUsFirstSellButtonJumbotronLight" class="btn btn-danger btn-lg ml-5 mr-5 " type="button" title="I want to sell a skeleton">
+                        Sell
+                    </button>
+                </p>
+            </div>
+        </div>
+    </article>
+
+    <!-- Our History Two Div, Pointing Skeleton  -->
+    <section class="hidden">
+        <div class="row align-items-md-stretch my-2 mx-1">
+            <div class="col-md-6">
+                <div class="h-100 p-5 text-white bg-dark rounded-3">
+                    <h2>Our History</h2>
+                    <p>
+                        Our skeleton site, skeletons.com has been evolving with the internet for a long time. Our founder was Dr. Skele McSkeleton. The McSkeleton family fortune
+                        was made through the completely legal sale of cadaviers to medical hospitals in the 1800s. is completely legitimate grandchildren took that completely
+                        legal money and started this site, to further their grandfather's mission of buying and selling skeletons on behalf of our members. The grandson, Heuy, Dewey, and Louie,
+                        McSkeleton are proud to carry on their grandfather's legacy. We have been and always will be your one stop skeleton shop.
+                    </p>
+                    <button id="btn-dark-square-our-history" class="btn btn-secondary myWiggle" type="button">View our online store!</button>
+
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="h-100 p-5 bg-light border rounded-3">
+                    <h2>Skele McSkeleton Sefl Portrait</h2>
+                    <img src="Assets/svg/Cartoon-Skeleton.svg">
+
+                    <p>
+                        Don't go to far! Take another look at our skeleton collection! (to your left or above on mobile)
+                    </p>
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--Three Div-->
+    <section class="hidden">
+        <div class="row align-items-md- my-1 mx-1">
+            <div class="col-md-4">
+                <div class="h-100 p-5 text-white bg-dark rounded-3">
+                    <h2>Our Shop</h2>
+                    <p>If you need it we have it, shop our online skeleton cataloge, this week we have a special on blue whale skeletons.</p>
+                    <button class="btn btn-light text-black " type="button">Our Shop!</button>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="h-100 p-5 bg-light text-dark border rounded-3">
+                    <h2>Our Warehouse</h2>
+                    <p>Take a virtual tour, or schedule an in person tour at our warehouse. See where we store the world's largest skeleton collection.</p>
+                    <button class="btn btn-warning wiggle" type="button">Our Warehouse!</button>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="h-100 p-5 text-white bg-dark rounded-3">
+                    <h2>Our API and Cloud</h2>
+                    <p>Here you can find docs, sdk, apis, and our community page, plus much much more..</p>
+                    <button class="btn btn-success" type="button">For Developers</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Blank Still Two Div -->
+    <section class="hidden">
+        <div class="row align-items-md-stretch my-2 mx-1">
+            <div class="col-md-6">
+                <div class="h-100 p-5 text-white bg-dark rounded-3">
+                    <h2>Skeleton.com Careers</h2>
+                    <p>Want to work for the only skeleton company in the game? We are always looking for fresh bones! Click below to inquire further.</p>
+                    <button class="btn btn-info" type="button">Careers</button>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="h-100 p-5 bg-light border rounded-3">
+                    <h2>Our Partner Companies</h2>
+                    <p>
+                        While we'd love to take all the credit for making skeletons.com, we can't We have had many partners through the centuries, who all played a role in what we are today.
+                        Visit our partner's page to learn more!
+                    </p>
+                    <button class="btn btn-danger" type="button">Partner's Page</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--Meat the Team LEADERS intro JumboTron Dark-->
+    <article class="hidden">
+        <div class="p-5 mb-4 bg-light rounded-3 text-dark">
+            <div class="container py-5">
+                <h1 class="display-5 fw-bold text-center">Meet the Team</h1>
+
+            </div>
+        </div>
+    </article>
+
+    <!--Meat the Team LEADERS intro JumboTron Dark-->
+    <article class="hidden">
+        <div class="p-5 mb-4 bg-dark rounded-3 text-white">
+            <div class="container py-5">
+                <h1 class="display-5 fw-bold text-center">Head Buyers</h1>
+
+            </div>
+        </div>
+    </article>
+    <!--Employee meat the team section make more-->
+    <section id="meet-the-team" class="hidden">
+        <div class="row m-1">
+            <!--Rick Sanchez -->
+            <div class="col-4 my-1">
+                <img class="bd-placeholder-img rounded-circle" src="./Assets/image/business-man-black-tuxedo-white-background.jpg" role="img" width="140" height="140" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Rick Sanchez</title><rect width="100%" height="100%" fill="#777"></rect><text x="50%" y="50%" fill="#777" dy=".3em"></text> />
+                <h2>Rick Sanchez</h2>
+                <p>Founder, Head of Design</p>
+                <p><a class="btn btn-primary" href="#">Employee Details</a></p>
+            </div><!-- /.col-lg-4 -->
+            <!--- employess -->
+            <!---->
+            <!---->
+            <div class="col-4 my-1">
+                <img class="bd-placeholder-img rounded-circle" src="./Assets/image/businessman-his-office-holding-cactus.jpg" role="img" width="140" height="140" preserveAspectRatio="xMidYMid slice" focusable="false">
+                <title>Han Solo</title><rect width="100%" height="100%" fill="#777"></rect><text x="50%" y="50%" fill="#777" dy=".3em"></text>
+                <h2>Han Solo</h2>
+                <p>Head of Logistics
+                <p><a class="btn btn-primary" href="#">Employee Details</a></p>
+            </div><!-- /.col-lg-4 -->
+            <!---->
+            <!---->
+            <div class="col-4 my-1">
+                <img class="bd-placeholder-img rounded-circle" src="./Assets/image/young-man-beige-jacket-cap-holding-eyeglasses-with-both-hands-looking-optimistic-front-view.jpg" role="img" width="140" height="140" preserveAspectRatio="xMidYMid slice" focusable="false">
+                <title>Nicola Tesla</title><rect width="100%" height="100%" fill="#777"></rect><text x="50%" y="50%" fill="#777" dy=".3em"></text>
+                <h2>Nikola Tesla</h2>
+                <p> Founder, Head of Research</p>
+                <p><a class="btn btn-primary" href="#">Employee Details</a></p>
+            </div><!-- /.col-lg-4 -->
+            <!---->
+            <!---->
+            <!-- Call to action, Final pitch about us to customer-->
+            <!--Meat the Team LEADERS intro JumboTron Dark-->
+            <article class="hidden">
+                <div class="p-5 mb-4 bg-dark rounded-3 text-white">
+                    <div class="container py-5">
+                        <h1 class="display-5 fw-bold text-center">Head Sellers</h1>
+
+                    </div>
+                </div>
+            </article>
+
+
+            <div class="col-4 my-1">
+                <img class="bd-placeholder-img rounded-circle" src="./Assets/image/two-young-people-offering-dvds-sale.jpg" role="img" width="140" height="140" preserveAspectRatio="xMidYMid slice" focusable="false">
+                <title>Buzz Aldren</title><rect width="100%" height="100%" fill="#777"></rect><text x="50%" y="50%" fill="#777" dy=".3em"></text>
+                <h2>Buzz Aldren</h2>
+                <p>Head of Space Skeletons</p>
+                <p><a class="btn btn-primary" href="#">Employee Profile</a></p>
+            </div><!-- /.col-lg-4 -->
+            <!---->
+            <!---->
+            <div class="col-4 my-1">
+                <img class="bd-placeholder-img rounded-circle" src="./Assets/image/young-businessman-with-boxing-gloves.jpg" role="img" width="140" height="140" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Tim Burners Lee</title><rect width="100%" height="100%" fill="#777"></rect><text x="50%" y="50%" fill="#777" dy=".3em">
+                    <h2>Tim Berners Lee</h2>
+                    <p> Website Architect </p>
+                    <p><a class="btn btn-primary" href="#">Employee Profile</a></p>
+            </div><!-- /.col-lg-4 -->
+            <!---->
+            <!---->
+
+
+            <div class="col-4 my-1">
+                <img class="bd-placeholder-img rounded-circle" src="./Assets/image/businessman-his-office-playing-with-balloon.jpg" role="img" width="140" height="140" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Dennis Ritchie</title><rect width="100%" height="100%" fill="#777"></rect><text x="50%" y="50%" fill="#777" dy=".3em"></text>
+                <h2>SkeleAI</h2>
+                <p>GAI, real CEO</p>
+                <p><a class="btn btn-primary" href="#">Employee Profile</a></p>
+            </div><!-- /.col-lg-4 -->
+            <!---->
+            <!---->
+            <!--Meat the Team LEADERS intro JumboTron Dark-->
+            <article class="hidden">
+                <div class="p-5 mb-4 bg-dark rounded-3 text-white">
+                    <div class="container py-5">
+                        <h1 class="display-5 fw-bold text-center">Head Developers</h1>
+
+                    </div>
+                </div>
+            </article>
+
+            <div class="col-4 my-1">
+                <img class="bd-placeholder-img rounded-circle" src="./Assets/image/businessman-his-office-holding-cactus.jpg" role="img" width="140" height="140" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Brian Kerington</title><rect width="100%" height="100%" fill="#777"></rect><text x="50%" y="50%" fill="#777" dy=".3em"></text>
+                <h2>Brian Kerington</h2>
+                <p>Head of docs & micro languages</p>
+                <p><a class="btn btn-primary" href="#">Employee Details</a></p>
+            </div><!-- /.col-lg-4 -->
+            <!---->
+            <!---->
+            <!---->
+            <!---->
+
+
+            <div class="col-4 my-1">
+                <img class="bd-placeholder-img rounded-circle" src="./Assets/image/businessman-his-office-making-good-bad-sign.jpg" role="img" width="140" height="140" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Linus Trevaulds</title><rect width="100%" height="100%" fill="#777"></rect><text x="50%" y="50%" fill="#777" dy=".3em"></text>
+                <h2>Linus Trevaulds</h2>
+                <p>
+                    CTO
+                </p><p><a class="btn btn-primary" href="#">Employee Details</a></p>
+            </div><!-- /.col-lg-4 -->
+            <!---->
+            <!---->
+
+            <div class="col-4 my-1">
+
+                <h2>Dennis Ritchie</h2>
+                <img class="bd-placeholder-img rounded-circle" src="./Assets/image/two-young-people-offering-dvds-sale.jpg" role="img" width="140" height="140" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Ken Thompson</title><rect width="100%" height="100%" fill="#777"></rect><text x="50%" y="50%" fill="#777" dy=".3em"></text>                <h2>Ken Thompson</h2>
+                <p>Designer of skeleOs</p>
+                <p><a class="btn btn-primary" href="#">Employee Details</a></p>
+            </div><!-- /.col-lg-4 -->
+            <!---->
+            <!---->
+
+            <div class="col-4 my-1">
+                <img class="bd-placeholder-img rounded-circle" src="./Assets/image/smiling-worker-playing-with-his-tie.jpg" role="img" width="140" height="140" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Brajne Stroudsup</title><rect width="100%" height="100%" fill="#777"></rect><text x="50%" y="50%" fill="#777" dy=".3em"></text>
+                <h2>Bjarne Strousdsup</h2>
+                <p>Designer of SkeleLang++</p>
+                <p><a class="btn btn-primary" href="#">Employee Details</a></p>
+            </div><!-- /.col-lg-4 -->
+            <!---->
+            <!---->
+
+
+            <div class="col-4 my-1">
+                <img class="bd-placeholder-img rounded-circle" src="./Assets/image/businessman-his-office-holding-cactus.jpg" role="img" width="140" height="140" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Guido Van Rossum</title><rect width="100%" height="100%" fill="#777"></rect><text x="50%" y="50%" fill="#777" dy=".3em"></text>
+
+                <h2>Guido Van Rossum</h2>
+                <p>Creator of Skelthon</p>
+                <p><a class="btn btn-primary" href="#">Employee Details</a></p>
+            </div><!-- /.col-lg-4 -->
+            <!---->
+            <!---->
+
+            <div class="col-4 my-1">
+                <img class="bd-placeholder-img rounded-circle" src="./Assets/image/young-man-beige-jacket-cap-holding-eyeglasses-with-both-hands-looking-optimistic-front-view.jpg" role="img" width="140" height="140" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Guido Van Rossum</title><rect width="100%" height="100%" fill="#777"></rect><text x="50%" y="50%" fill="#777" dy=".3em">
+
+                </text>
+
+                <h2>William Friend</h2>
+                <p>Intern</p>
+                <p><a class="btn btn-primary" href="#">Employee Details</a></p>
+            </div><!-- /.col-lg-4 -->
+        </div>
+    </section>
+
+    <!-- Call to action, Final pitch about us to customer-->
+    <section class="hidden">
+        <div class="bg-dark text-secondary px-4 py-5 text-center mx-1 my-1">
+            <div class="py-5">
+
+                <div class="col-lg-6 mx-auto">
+                    <h3> Skeletons.com </h3>
+                    <img src="./Assets/svg/Skeleton-Key-Silhouette.svg" /.
+                    <div class="d-grid gap-2 d-sm-flex justify-content-sm-center align-content-xxl-center">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Call to action, Final pitch about us to customer-->
+    <section class="hidden">
+        <div class="bg-dark text-secondary px-4 py-5 text-center">
+            <div class="py-5">
+                <h1 class="display-5 fw-bold text-white">Call to action</h1>
+                <div class="col-lg-6 mx-auto">
+                    <p class="fs-5 mb-4">
+                        Please Donate Money to The Cause! We accept dollars, cents, stripe, crypto. (please no dogecoin)
+                    </p>
+                    <p class="fs-5 mb-4">
+                        We are legion. And we are more then we can list in one page.
+                    </p>
+                    <div class="container gap-2 d-sm-flex justify-content-center align-content-center">
+                        <!--needs image-->
+                        <img class="img-fluid" src="./Assets/svg/skeletons_scary-skulls-seamless-pattern.svg" />
+                        <button class="btn btn-outline-info btn-lg px-4 me-sm-3 fw-bold last1 btn-group" type="button">Help the Cause</button>
+                        <button class="btn btn-outline-dark btn-lg px-4 last2 btn-group btn-danger text-dark" type="button">Join the skeleton member program</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+    <!-- Employee Search,Light Section Best ways to find specific employees, how to reach specific employees, could be thousands outLight section, Left Justified-->
+    <section class="hidden">
+        <div class="container col-xxl-8 px-4 py-5">
+            <div class="row flex-lg-row-reverse align-items-center g-5 py-5">
+                <div class="col-10 col-sm-8 col-lg-6">
+                    <img class="d-block mx-lg-auto img-fluid" src="./Assets/svg/1587403297halfskeletonhalfman.svg" alt="Bootstrap Themes" width="500" height="300" loading="lazy">
+                </div>
+                <div class="col-lg-6">
+                    <h1 class="display-5 fw-bold lh-1 mb-3">Search Our Entire Employee Archive</h1>
+                    <p class="lead">Not finding who you need? Try a more comprehensive search...</p>
+                    <div class="d-grid gap-2 d-md-flex justify-content-md-start">
+                        <button class="btn btn-primary btn-lg px-4 me-md-2" type="button">Search by Department</button>
+                        <button class="btn text-white btn-danger btn-outline-dark  btn-lg px-4" type="button">Search bv Head</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Three Div Links to try and redirect customers back to where we want them before the end-->
+    <section class="hidden">
+        <div class="row my-4 mx-1">
+            <div class="col-md-4">
+                <div class="h-100 p-5 text-white bg-dark border-1 rounded-3">
+                    <h2>Buy</h2>
+                    <button class="btn btn-outline-light danger text-white" type="button">Buyers</button>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="h-100 p-5 bg-light border-1  rounded-3">
+                    <h2>Sell</h2>
+                    <button class="btn btn-outline-secondary danger text-dark" type="button">Sellers</button>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="h-100 p-5 text-white bg-dark boder-1 shadow rounded-3">
+                    <h2>Developers</h2>
+                    <button class="btn btn-outline-light danger text-white" type="button">Developers</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Call to action, Dark Section, charity pitch about us to customer-->
+    <section class="hidden">
+        <div class="bg-dark text-secondary px-4 py-5 text-center mx-1 my-2">
+            <div class="py-5">
+                <h1 class="display-5 fw-bold text-white">How else to help</h1>
+                <div class="col-lg-6 mx-auto">
+                    <p class="fs-5 mb-4">
+                        We survive mostly on donations and commissions on sales. The more donations we lower the
+                        commission skeletons.com need to take. AGAIN:::::We survive mostly on donations and commissions on sales. The more donations we lower the
+                        commission skeletons.com need to take. Please, donate, our executives can only afford G-5's.
+                        Things are getting bad here.
+                    </p>
+                    <div class="d-grid gap-2 d-sm-flex justify-content-sm-center align-content-xxl-center">
+                        <!--needs image-->
+                        <button class="btn btn-outline-info btn-lg px-4 me-sm-3 fw-bold last1 btn-group" type="button">Help the Cause</button>
+                        <button class="btn btn-outline-dark btn-lg px-4 last2 btn-group btn-danger fw-bold text-light" type="button">Join the skeleton member program</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+
+
+    <!-- Footer, Light Section -->
+    <section>
+        <div class="container">
+            <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top">
+                <p class="col-md-4 mb-0 text-dark">
+                    2023 Friendco
+                </p><p>
+
+                    <a class="col-md-4 d-flex align-items-center justify-content-center mb-3 mb-md-0 me-md-auto link-dark text-decoration-none" href="/">
+                        <img class="bi me-2" src="./Assets/svg/skull_logo.svg" width="40" height="32">
+                    </a>
+
+                    <ul class="nav col-md-4 justify-content-end">
+                        <li class="nav-item"><a class="nav-link px-2 text-dark" href="./homepage.html">Home</a></li>
+                        <li class="nav-item"><a class="nav-link px-2 text-dark deactivate" href="#">Buy</a></li>
+                        <li class="nav-item"><a class="nav-link px-2 text-dark deactivate" href="#">Sell</a></li>
+                        <li class="nav-item"><a class="nav-link px-2 text-dark active" href="#">AboutUs</a></li>
+                        <li class="nav-item"><a class="nav-link px-2 text-dark" href="#">FAQs</a></li>
+                        <li class="nav-item">
+                            <a class="nav-link px-2 text-dark" href="./AboutUs.html" title="Click me I work!">About</a>
+                        </li>
+                    </ul>
+                </p>
+            </footer>
+        </div>
+    </section>
+
+
+
+
+</body>
+
+</html>
