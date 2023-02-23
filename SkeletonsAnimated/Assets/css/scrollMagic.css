@@ -2,7 +2,7 @@
 .hidden {
     /* this is hidden right */
     opacity: 0;
-    transition: all 500ms;
+    transition: all 1250ms;
     filter: blur(5px);
     transform: translateX(-100%)
     /*    
