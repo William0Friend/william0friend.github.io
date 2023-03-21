@@ -1,0 +1,21 @@
+﻿.shopping-cart {
+    margin-top: 20px;
+    border: 1px solid #ccc;
+    padding: 20px;
+}
+
+.cart-item {
+    margin-bottom: 20px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    background-color: #f9f9f9;
+}
+
+    .cart-item h4 {
+        margin-top: 0;
+    }
+
+    .cart-item p {
+        margin-bottom: 0;
+    }
+

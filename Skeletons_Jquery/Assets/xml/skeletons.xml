@@ -1,0 +1,69 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<skeletons>
+	<skeleton name="Classic Skeleton">
+		<price>100.00</price>
+		<image>./Assests/svg/skeleton_crow.svg</image>
+		<quantity>10</quantity>
+		<description>A classic skeleton with all the usual bones.</description>
+	</skeleton>
+	<skeleton name="Disarticulated Skeleton">
+		<price>200.00</price>
+		<image>./Assests/svg/skeleton_dog.svg</image>
+		<quantity>5</quantity>
+		<description>A disassembled skeleton for studying anatomy.</description>
+	</skeleton>
+	<skeleton name="Fetal Skeleton">
+		<price>300.00</price>
+		<image>./Assests/svg/skeleto_bat.svg</image>
+		<quantity>3</quantity>
+		<description>A fetal skeleton for studying fetal development.</description>
+	</skeleton>
+	<skeleton name="Halloween Skeleton">
+		<price>50.00</price>
+		<image>./Assests/svg/skeleton_hourse.svg</image>
+		<quantity>20</quantity>
+		<description>A skeleton with a jack-o'-lantern head for Halloween decorations.</description>
+	</skeleton>
+	<skeleton name="Classic Skeleton">
+		<price>100.00</price>
+		<image>./Assests/svg/skeleton_crow.svg</image>
+		<quantity>10</quantity>
+		<description>A classic skeleton with all the usual bones.</description>
+	</skeleton>
+	<skeleton name="Disarticulated Skeleton">
+		<price>200.00</price>
+		<image>./Assests/svg/skeleton_dog.svg</image>
+		<quantity>5</quantity>
+		<description>A disassembled skeleton for studying anatomy.</description>
+	</skeleton>
+	<skeleton name="Fetal Skeleton">
+		<price>300.00</price>
+		<image>./Assests/svg/skeleto_bat.svg</image>
+		<quantity>3</quantity>
+		<description>A fetal skeleton for studying fetal development.</description>
+	</skeleton>
+	<skeleton name="Halloween Skeleton">
+		<price>50.00</price>
+		<image>./Assests/svg/skeleton_hourse.svg</image>
+		<quantity>20</quantity>
+		<description>A skeleton with a jack-o'-lantern head for Halloween decorations.</description>
+	</skeleton>
+	<skeleton name="Zombie Skeleton">
+		<price>75.00</price>
+		<image>./Assests/svg/skeleton_zombie.svg</image>
+		<quantity>15</quantity>
+		<description>A skeleton with zombie-like features.</description>
+	</skeleton>
+	<skeleton name="Robot Skeleton">
+		<price>500.00</price>
+		<image>./Assests/svg/skeleton_robot.svg</image>
+		<quantity>2</quantity>
+		<description>A skeleton with robotic components.</description>
+	</skeleton>
+	<skeleton name="Gothic Skeleton">
+		<price>150.00</price>
+		<image>./Assests/svg/skeleton_gothic.svg</image>
+		<quantity>7</quantity>
+		<description>A skeleton with gothic-style details.</description>
+	</skeleton>
+</skeletons>

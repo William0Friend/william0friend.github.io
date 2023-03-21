@@ -1,0 +1,45 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<skeletons>
+	<skeleton name="Crow">
+		<price>100.00</price>
+		<image>Assets/image/skeleton_crow.jpg</image>
+		<quantity>10</quantity>
+		<description>A crow skeleton for studying cow development.</description>
+	</skeleton>
+	<skeleton name="Dog">
+		<price>200.00</price>
+		<image>Assets/image/skeleton_dog.jpg</image>
+		<quantity>5</quantity>
+		<description>A dog skeleton for studying dog development.</description>
+	</skeleton>
+	<skeleton name="Bat">
+		<price>300.00</price>
+		<image>Assets/image/skeleton_bat.jpg</image>
+		<quantity>3000</quantity>
+		<description>A bat skeleton for studying bat development.</description>
+	</skeleton>
+	<skeleton name="Horse">
+		<price>5000.00</price>
+		<image>Assets/image/skeleton_horse_rectangle.jpg</image>
+		<quantity>20</quantity>
+		<description>A bat hourse for studying hourse development.</description>
+	</skeleton>
+	<skeleton name="Toy">
+		<price>10.00</price>
+		<image>Assets/image/emp-toy-red-eyes.jpg</image>
+		<quantity>8</quantity>
+		<description>A toy skeleton for definitely not studying necromancy.</description>
+	</skeleton>
+	<skeleton name="Fish">
+		<price>50.00</price>
+		<image>Assets/image/skeleton_whale.jpg</image>
+		<quantity>100</quantity>
+		<description>A fish skeleton for studying fish development.</description>
+	</skeleton>
+	<skeleton name="Random">
+		<price>75.00</price>
+		<image>Assets/image/skeleton_meadly.jpg</image>
+		<quantity>15</quantity>
+		<description>A snake skeleton for studying reptile development.</description>
+	</skeleton>
+</skeletons>

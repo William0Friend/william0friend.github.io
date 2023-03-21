@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<?xml-stylesheet type="text/xsl" href="./reslist.xsl"?>
+
+<UNIT_TEMPLATE>
+
+   <UNIT>
+      <UNIT_NAME>Combined Air Operations Center</UNIT_NAME>
+      <UNIT_LOC>Hurlburt Field, FL</UNIT_LOC>
+      <UNIT_EMAIL>JBI@CAOC.HURLBURT.AF.MIL</UNIT_EMAIL>
+   </UNIT>
+
+   <RESOURCE_LIST>
+      <RESOURCE>
+         <RES_ID>JBI-001</RES_ID>
+         <RES_TYPE>Document</RES_TYPE>
+         <PATH>c:\Outlook_YJBI\xml\jbi\</PATH>
+         <NAME>intelrpt.xml</NAME>
+         <DESCRIPTION>Intelligence Reports for Theater of Operations</DESCRIPTION>
+         <UPDATED>Random</UPDATED>
+      </RESOURCE>
+      <RESOURCE>
+         <RES_ID>JBI-002</RES_ID>
+         <RES_TYPE>Document</RES_TYPE>
+         <PATH>c:\Outlook_YJBI\xml\jbi\</PATH>
+         <NAME>targetlist.xml</NAME>
+         <DESCRIPTION>List of targets for the current ATO Cycle</DESCRIPTION>
+         <UPDATED>Hourly</UPDATED>
+      </RESOURCE>
+      <RESOURCE>
+         <RES_ID>JBI-003</RES_ID>
+         <RES_TYPE>Web Page</RES_TYPE>
+         <PATH>c:\Outlook_YJBI\xml\jbi\</PATH>
+         <NAME>linktest.xml</NAME>
+         <DESCRIPTION>Summary of Breaking News</DESCRIPTION>
+         <UPDATED>Hourly</UPDATED>
+      </RESOURCE>
+      <RESOURCE>
+         <RES_ID>JBI-004</RES_ID>
+         <RES_TYPE>Document</RES_TYPE>
+         <PATH>c:\Outlook_YJBI\xml\jbi\</PATH>
+         <NAME>maintrpt.xml</NAME>
+         <DESCRIPTION>Maintenance Reports for Wing Aircraft</DESCRIPTION>
+         <UPDATED>Every half hour</UPDATED>
+       </RESOURCE>
+      <RESOURCE>
+         <RES_ID>JBI-005</RES_ID>
+         <RES_TYPE>Document</RES_TYPE>
+         <PATH>c:\Outlook_YJBI\xml\jbi\</PATH>
+         <NAME>Ato_a.xml</NAME>
+         <DESCRIPTION>ATO for Current 24 hour Cycle</DESCRIPTION>
+         <UPDATED>Daily</UPDATED>
+      </RESOURCE>
+      <RESOURCE>
+         <RES_ID>JBI-007</RES_ID>
+         <RES_TYPE>Folder</RES_TYPE>
+         <PATH>c:\Outlook_YJBI\xml\notams\</PATH>
+         <NAME>Notams</NAME>
+         <DESCRIPTION>Airman Notification Database</DESCRIPTION>
+         <UPDATED>Every 15 minutes</UPDATED>
+      </RESOURCE>
+   </RESOURCE_LIST>
+
+   <ASSOCIATED_LINKS>
+      <LINK>
+         <ORG>C2TIG</ORG>
+         <HREF>http://www2.acc.af.mil/afc2tig/</HREF>
+         <ORG_LOC>Hurlburt Field, FL</ORG_LOC>
+         <DESCRIPTION>Host organization for CAOC</DESCRIPTION>
+      </LINK>
+      <LINK>
+         <ORG>AFRL</ORG>
+         <HREF>http://www.afrl.af.mil</HREF>
+         <ORG_LOC>Wright Patterson AFB, OH</ORG_LOC>
+         <DESCRIPTION>Primary Technology Provider</DESCRIPTION>
+      </LINK>
+   </ASSOCIATED_LINKS>
+</UNIT_TEMPLATE>

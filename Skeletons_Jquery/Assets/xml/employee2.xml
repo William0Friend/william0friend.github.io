@@ -1,0 +1,47 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<employees>
+	<department name="Sell">
+		<subdepartment name="Sellers">
+			<employee name="Rick Sanchez" image="./Assets/image/business-man-black-tuxedo-white-background.jpg" title="Founder, Head of Design" email="rick.c347@skeletons.com" />
+			<employee name="Han Solo" image="./Assets/image/emp-lone-boy-over-sholder-scary.jpg" title="Head of Logistics" email="solo.falcon@skeletons.com" />
+			<employee name="Leia Organa" image="./Assets/image/emp-two-skele-girls.jpg" title="Sales Manager" email="leia.organa@skeletons.com" />
+			<employee name="Morty Smith" image="./Assets/image/emp-scary-skele-lone-boy-dark.jpg" title="Sales Representative" email="morty.s@skeletons.com" />
+		</subdepartment>
+	</department>
+	<department name="Buy">
+		<subdepartment name="Buyers">
+			<employee name="Tim Berners Lee" image="./Assets/image/emp-2-skele-1-gasping.jpg" title="Website Architect" email="tim0@skeletons.com" />
+			<employee name="SkeleAI" image="./Assets/image/businessman-his-office-playing-with-balloon.jpg" title="GAI, real CEO" email="zero@skeletons.com" />
+			<employee name="Bruce Wayne" image="./Assets/image/emp-skele-boy-skele-ballon-face.jpg" title="Purchasing Manager" email="bruce.wayne@skeletons.com" />
+			<employee name="Clark Kent" image="./Assets/image/emp-skele-man-guitar-sugar.jpg" title="Purchasing Agent" email="clark.kent@skeletons.com" />
+		</subdepartment>
+	</department>
+	<department name="Dev">
+		<subdepartment name="Developers">
+			<employee name="David Chen" image="./Assets/image/emp-mask-inorange-bucket.jpg" title="Senior Software Engineer" email="david.chen@skeletons.com" />
+			<employee name="Amy Li" image="./Assets/image/businessman-his-office-making-good-bad-sign.jpg" title="Software Engineer" email="amy.li@skeletons.com" />
+			<employee name="Jane Doe" image="./Assets/image/emp-skele-pink-dress.jpg" title="Web Developer" email="john.doe@skeletons.com" />
+			<employee name="Jon Smith" image="./Assets/image/emp-skele-woman-throns.jpg" title="Software Developer" email="jane.smith@skeletons.com" />
+		</subdepartment>
+	</department>
+	<department name="Others">
+		<subdepartment name="PR">
+			<employee name="Tom Nguyen" image="./Assets/image/skele-hands-laptop.jpg" title="QA Manager" email="tom.nguyen@skeletons.com" />
+			<employee name="Emily Wang" image="./Assets/image/emp-two-skele-girls-happy.jpg" title="QA Analyst" email="emily.wang@skeletons.com" />
+			<employee name="Peter Parker" image="./Assets/image/emp-yellow-sugar.jpg" title="PR Manager" email="peter.parker@skeletons.com" />
+			<employee name="Mary Jane" image="./Assets/image/emp-skele-man-pointing.jpg" title="Public Relations Coordinator" email="mary.jane@skeletons.com" />
+		</subdepartment>
+		<subdepartment name="HR">
+			<employee name="John Smith" image="./Assets/image/emp-skele-boy-skele-ballon-face.jpg" title="HR Manager" email="john.smith@skeletons.com" />
+			<employee name="Lisa Kim" image="./Assets/image/excited-businessman-with-glasses-typing-keyboard.jpg" title="HR Coordinator" email="lisa.kim@skeletons.com" />
+			<employee name="Samantha Johnson" image="./Assets/image/skele-teacher.jpg" title="Human Resources Generalist" email="samantha.johnson@skeletons.com" />
+			<employee name="Andrew Lee" image="./Assets/image/skeleton_trump.jpg" title="Human Resources Specialist" email="andrew.lee@skeletons.com" />
+		</subdepartment>
+		<subdepartment name="Finance">
+			<employee name="Michael Lee" image="./Assets/image/businessman-his-office-holding-cactus.jpg" title="Finance Manager" email="michael.lee@skeletons.com" />
+			<employee name="Sarah Johnson" image="./Assets/image/skele-in-ofice-toy.jpg" title="Financial Analyst" email="sarah.johnson@skeletons.com" />
+			<employee name="Max Johnson" image="./Assets/image/skele-message-2.jpg" title="Accounts Receivable Manager" email="max.johnson@skeletons.com" />
+			<employee name="Catherine Jones" image="./Assets/image/skele-message-1.jpg" title="Accounts Payable Specialist" email="catherine.jones@skeletons.com" />
+		</subdepartment>
+	</department>
+</employees>
