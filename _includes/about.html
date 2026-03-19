@@ -1,64 +1,68 @@
+<section id="about" class="section-alt">
+  <div class="container">
+    <div class="section-heading" data-aos="fade-up">
+      <span class="section-badge">About</span>
+      <h2>A bit about me</h2>
+      <p>Engineer by training, builder by instinct — I love solving real problems with clean code.</p>
+    </div>
 
-    <!-- ======= About Section ======= -->
-    <section id="about" class="border-5 border-white sect-pt4 route" style="color:black">
-      <div class="container">
-        <div class="row">
-          <div class="col-sm-12">
-            <div class="box-shadow-full">
-            <div class="row bg-gradient border border-danger" style="background-color: lightgreen; align-items: center;">
-                <div class="col-md-6">
-                  <div class="row border border-dark bg-dark" >
-                    <div class="pb-2 col-sm-6 col-md-5">
-                      <div class="about-img">
-                        <img src="assets/images/wf-short-hair-025.jpeg" class="border border-white mt-1 img-fluid rounded b-shadow-a" alt="">
-                      </div>
-                    </div>
-                    <div class="col-sm-6 col-md-7">
-                      <div class="about-info border-5 border-white">
-                        <p><span class="title mt-5">Name: </span> <span>William Friend</span></p>
-                        <p><span class="title">Profile: </span> <span>Full-Stack developer and Security Engineer</span></p>
-                        <p><span class="title">Email: </span> <span>william.friend777@gmail.com</span></p>
-                        <p><span class="title">Phone: </span> <span>(908) 328-5476</span></p>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="skill-mf" >
-                    <p class="title mt-1 border-bottom border-dark shadow">Skills</p>
-                    <span class="span ">HTML</span> 
-                    <span class="span ">PHP</span>
-                    <span class="span ">JAVASCRIPT</span>
-                    <span class="span ">JAVA</span>
-                    <span class="span ">Python</span>
-                    <span class="span ">XML</span>
-                    <span class="span ">C++</span>
-                    <span class="span ">GO</span>
-                    <span class="span ">BASH</span>
-                    <span class="span ">C</span>
-                    <span class="span ">CRUD</span>
-                    <span class="span ">REST</span>
-                    <span class="span ">AGILE</span>
-                </div>
-                <div class="col-md-6 align-items-center">
-                  <div class="about-me pt-4 pt-md-0">
-                    <div class="title-box-2">
-                      <h5 class="title-left">
-                        About me
-                      </h5>
-                    </div>
-                    <p class="lead p-1 border border-dark shadow">
-                        I love making and breaking disruptive web applications.
-                    </p>
-                    <p class="lead p-1 border border-dark shadow">
-                        I love solving problems with code.
-                    </p>
-                    <p class="lead p-1 border border-dark shadow">
-                        I am always looking for a way improve the world with a combination of hardware and software.
-                    </p>
-                  </div>
-                </div>
-              </div>
-            </div>
+    <div class="row align-items-center g-5">
+      <div class="col-lg-4 text-center" data-aos="fade-right">
+        <div class="about-avatar-wrap">
+          <div class="about-avatar">
+            <img src="/assets/images/wf-short-hair-025.jpeg"
+                 alt="William Friend"
+                 style="width:100%;height:100%;object-fit:cover;border-radius:50%"
+                 onerror="this.style.display='none';this.parentElement.innerHTML='&#129489;'">
           </div>
+          <span class="about-badge">&#x2022; Open to freelance</span>
         </div>
       </div>
-    </section><!-- End About Section -->
+
+      <div class="col-lg-8 about-text" data-aos="fade-left">
+        <h3>William Friend</h3>
+        <p>
+          I'm a full-stack software engineer working remotely at
+          <a href="https://www.abuseipdb.com" target="_blank" rel="noopener"><strong>Marathon Studios / AbuseIPDB</strong></a>
+          — one of the internet's most referenced IP threat intelligence platforms, serving hundreds of thousands
+          of daily requests from Fortune 500 enterprises to individual homelab operators.
+        </p>
+        <p>
+          Over the past 3+ years I've worn every engineering hat: full-stack feature development in
+          Laravel and Vue.js, DevOps and server hardening with Cloudflare and Fail2ban, security
+          engineering, data pipelines, and LLM integration. I own things end-to-end — from system
+          design through code review, CI/CD, and production deploy.
+        </p>
+        <p>
+          I graduated from <strong>East Stroudsburg University</strong> with a B.S. in Computer Science (GPA 3.3)
+          and have been building commercially since 2019 — first as a freelancer, then as a contractor,
+          then as a full-time engineer. I'm currently building an IP abuse early-detection ML model
+          and an AbuseIPDB MCP server for LLM agents.
+        </p>
+
+        <div class="about-tags">
+          <span class="about-tag">Laravel / PHP</span>
+          <span class="about-tag">Python</span>
+          <span class="about-tag">Security Engineering</span>
+          <span class="about-tag">AI / ML</span>
+          <span class="about-tag">DevOps</span>
+          <span class="about-tag">Threat Intelligence</span>
+          <span class="about-tag">PostgreSQL</span>
+          <span class="about-tag">Cloudflare</span>
+        </div>
+
+        <div class="about-ctas">
+          <a href="mailto:william0friend@outlook.com" class="btn-primary-solid">
+            <i class="fa-solid fa-envelope"></i> Get In Touch
+          </a>
+          <a href="/resume_2026.docx" download class="btn-outline-dark">
+            <i class="fa-solid fa-file-arrow-down"></i> Download Resume
+          </a>
+          <a href="{{ site.linkedin_url }}" target="_blank" rel="noopener" class="btn-outline-dark">
+            <i class="fa-brands fa-linkedin-in"></i> LinkedIn
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

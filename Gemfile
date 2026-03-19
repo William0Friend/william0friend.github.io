@@ -1,14 +1,10 @@
-# frozen_string_literal: true
-
 source "https://rubygems.org"
 
-# gem "rails"
-gem "jekyll"
-gem "webrick"
-
+gem "jekyll", "~> 4.2"
+gem "webrick", "~> 1.8"
 
 group :jekyll_plugins do
-  gem 'jekyll-sitemap'
-  gem 'jekyll-feed'
-  gem 'jekyll-seo-tag'
+  gem "jekyll-sitemap", "~> 1.4"
+  gem "jekyll-feed", "~> 0.17"
+  gem "jekyll-seo-tag", "~> 2.8"
 end

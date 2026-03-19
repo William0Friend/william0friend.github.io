@@ -1,42 +1,33 @@
 ---
 ---
-<!doctype html>
-<html>
-  <head>
-    {% include head.html %}
-    {% feed_meta %}
-    {% seo %}
-  </head>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  {% include head.html %}
+  {% feed_meta %}
+  {% seo %}
+</head>
 
-  <body>
-  <!-- ======= Header ======= -->
-    <!-- <header id="header" class="absolute-top"> -->
+<body>
 
-      <!-- <h1 class="logo m-4"><a href="index.html">William Friend Portfolio Landing Page</a></h1> -->
+  {% include navbar.html %}
+  {% include hero.html %}
+  {% include about.html %}
+  {% include skills.html %}
+  {% include experience.html %}
+  {% include portfolio.html %}
+  {% include repos.html %}
+  {% include contact_FreeForm.html %}
+  {% include footer.html %}
 
- 
-    <!-- </header>End Header -->
-  
-    
-
-     {{ content }} 
-  
-    <main id="main" class="main">
-        {% include navbar.html %}
-        {% include hero.html %}
-        {% include portfolio.html %}
-        {% include about.html %}
-        {% include contact_FreeForm.html %}    
-        
-    </main>
-  
-</body>
-  
-
-
-    <footer>
-      {% include footer.html %}
-    </footer>
+  <!-- Bootstrap 5 -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <!-- AOS -->
+  <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+  <!-- Swiper -->
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <!-- Portfolio JS -->
+  <script src="/assets/js/main.js"></script>
 
 </body>
 </html>

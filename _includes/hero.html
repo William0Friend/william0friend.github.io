@@ -1,22 +1,83 @@
-<!-- ======= Hero Section ======= -->
-  <div id="hero" class="hero route bg-image" 
-        style="background-image: url(../assets/images/overlay-bg.jpg)">
-    <div class="overlay-itro"></div>
-    <div class="hero-content display-table">
-      <div class="table-cell">
-        <div class="container">
-         <p class="display-6 color-d">Hello, world!</p>
-          <h1 class="hero-title mb-4">I am William Friend</h1>
-          <p class="hero-subtitle"><span class="typed" data-typed-items="Engineer, Developer, Hacker"></span></p>
-          <p class="pt-3"><a class="btn btn-primary btn js-scroll px-4" href="#about" role="button">About Me</a></p> 
-          <p class="pt-3"><a class="btn btn-primary btn js-scroll px-4" href="#contact" role="button">Contact Me</a></p> 
-          <style>
-            .btn {
-                color: white;
-                background-color: black;
-            }
-          </style>
+<section id="home">
+  <canvas id="hero-canvas"></canvas>
+
+  <div class="container hero-content">
+    <div class="row align-items-center" style="min-height:100vh">
+      <div class="col-lg-8 col-xl-7">
+
+        <div class="hero-eyebrow">
+          <span class="dot"></span>
+          Available for freelance
         </div>
+
+        <h1 class="hero-name">
+          William<br><span>Friend</span>
+        </h1>
+
+        <div class="hero-typed-wrap">
+          &gt;&nbsp;<span id="typed-text"></span>
+        </div>
+
+        <p class="hero-desc">
+          Full-stack software engineer with 3+ years building threat intelligence platforms,
+          security tooling, and AI/ML integrations at scale. Based remotely.
+        </p>
+
+        <div class="hero-buttons">
+          <a href="#projects" class="btn-primary-custom">
+            <i class="fa-solid fa-rocket"></i> View My Work
+          </a>
+          <a href="#contact" class="btn-outline-custom">
+            <i class="fa-solid fa-envelope"></i> Let's Talk
+          </a>
+        </div>
+
+        <div class="hero-socials">
+          <a href="https://github.com/William0Friend" target="_blank" rel="noopener"
+             class="hero-social-link" title="GitHub">
+            <i class="fa-brands fa-github"></i>
+          </a>
+          <a href="{{ site.linkedin_url }}" target="_blank" rel="noopener"
+             class="hero-social-link" title="LinkedIn">
+            <i class="fa-brands fa-linkedin-in"></i>
+          </a>
+          <a href="https://www.abuseipdb.com" target="_blank" rel="noopener"
+             class="hero-social-link" title="AbuseIPDB">
+            <i class="fa-solid fa-shield-halved"></i>
+          </a>
+          <a href="mailto:william0friend@outlook.com"
+             class="hero-social-link" title="Email">
+            <i class="fa-solid fa-envelope"></i>
+          </a>
+        </div>
+
+        <div class="hero-stats mt-4">
+          <div>
+            <div class="hero-stat-num">3<span>+</span></div>
+            <div class="hero-stat-label">Years Experience</div>
+          </div>
+          <div>
+            <div class="hero-stat-num">100<span>k+</span></div>
+            <div class="hero-stat-label">Daily Users Served</div>
+          </div>
+          <div>
+            <div class="hero-stat-num">50<span>+</span></div>
+            <div class="hero-stat-label">GitHub Repos</div>
+          </div>
+          <div>
+            <div class="hero-stat-num">100<span>+</span></div>
+            <div class="hero-stat-label">Code Reviews</div>
+          </div>
+        </div>
+
       </div>
     </div>
-  </div> <!-- End Hero Section -->
+  </div>
+
+  <div class="hero-scroll-hint">
+    <div class="scroll-mouse"></div>
+    <span>scroll</span>
+  </div>
+</section>
+
+<script type="module" src="/assets/js/hero3d.js"></script>

@@ -1,109 +1,125 @@
-<!-- ======= Contact Section ======= -->
-<section id="contact" class="paralax-mf footer-paralax bg-image sect-mt4 route"
-    style="background-image: url(assets/img/overlay-bg.jpg)">
-    <div class="overlay-mf"></div>
-    <div class="container">
-        <div class="row">
-            <div class="col-sm-12">
-                <div class="contact-mf">
-                    <div id="contact" class="box-shadow-full">
-                        <div class="row">
-                            <div class="col-md-6">
-                                <div class="title-box-2">
-                                    <h5 class="title-left">
-                                        Send Message to Me
-                                    </h5>
-                                </div>
-                                <div>
-
-                                    <!-- this forwards the message to freeform, which then sends it to the email
-                                            william0friend@outlook.com -->
-                                    <form action="https://formspree.io/f/moqzqldk" method="POST">
-                                        <div class="row">
-                                            <div class="col-md-12 mb-3">
-                                                <div class="form-group">
-                                                   <label>
-                                                    Type Email:
-                                                    <input type="email" name="email" class="form-control" id="name"
-                                                        placeholder="Your Email: :)" required>
-                                                    </label>
-                                                </div>
-                                            </div> 
-                                            <div class="col-md-12">
-                                                <div class="form-group">
-                                                    <label>
-                                                        Message Here, I will contact you back shortly...
-                                                    <textarea class="form-control" name="message" rows="10"
-                                                        placeholder="Your Message: :)" required></textarea>
-                                                    </label>
-                                                </div>
-                                            </div>
-
-
-                                        <!-- other form fields go here -->
-
-                                        <div class="col-md-12">
-                                            <div class="form-group">
-                                                <button type="submit" onclick="onSubmit()">Send Message</button>
-                                            </div>
-                                        </div>
-
-                                            <script>
-                                            function onSubmit(){
-                                                alert("You have sucessfully sent your message to William Friend :)");
-                                            }
-                                            //<div class="col-md-12 text-center my-3">
-                                            //    <div class="loading">Loading</div>
-                                            //    <div class="error-message"></div>
-                                            //    <div class="sent-message">Your message has been sent. Thank you!</div>
-                                            //</div>
-                                            </script>
-                                            <!--
-                                            <div class="col-md-12 text-center">
-                                                <button type="submit"
-                                                    class="button button-a button-big button-rouded">Send
-                                                    Message</button>
-                                            </div>
-                                            -->
-                                        </div>
-                                    </form>
-                                </div>
-                            </div>
-                            <div class="col-md-6">
-                                <div class="title-box-2 pt-4 pt-md-0">
-                                    <h5 class="title-left">
-                                        Get in Touch
-                                    </h5>
-                                </div>
-
-                                <div class="more-info">
-                                    <p class="lead">Please feel free to contact me!</p>
-                                    <ul class="list-ico">
-                                        <li><a href="https://www.google.com/maps/place/5035+Yukon+Dr,+East+Stroudsburg,+PA+18302/@41.089594,-75.0778024,16z/data=!4m15!1m8!3m7!1s0x89c484bb28129c33:0xc983d4cbd6a41f76!2s5035+Yukon+Dr,+East+Stroudsburg,+PA+18302!3b1!8m2!3d41.0894164!4d-75.0734572!16s%2Fg%2F11c87_vr08!3m5!1s0x89c484bb28129c33:0xc983d4cbd6a41f76!8m2!3d41.0894164!4d-75.0734572!16s%2Fg%2F11c87_vr08"><span class="bi bi-geo-alt"></span> 5035 Yukon
-                                                Drive</a></li>
-                                        <li><a href= "tel:+1(786)409-1587"><span class="bi bi-phone"></span>7864091587</a></li>
-                                        <li><a href="mailto:william0friend@gmail.com"><span class="bi bi-envelope"></span>
-                                                alt email william0friend@gamil.com</a></li>
-                                    </ul>
-                                </div>
-                                <div class="socials">
-                                    <h2 title="check some of my socials!"> Check out some of my other profiles for more info!</h2 title="check some of my socials!">
-                                    <ul>
-                                        <li><a href="https://www.facebook.com/will.friend.37"><span class="ico-circle"><i
-                                                        class="bi bi-facebook"></i></span></a></li>
-                                        <li><a href="https://www.github.com/william0friend"><span class="ico-circle"><i
-                                                        class="bi bi-github"></i></span></a></li>
-                                        <li><a href="https://my.indeed.com/p/williamf-5dvr41b"><span class="ico-circle"><i
-                                                        class="bi bi-flower1"></i></span></a></li>
-                                        <li><a href="https://www.linkedin.com/in/william0friend"><span class="ico-circle"><i
-                                                        class="bi bi-linkedin"></i></span></a></li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
+<section id="contact">
+  <div class="container">
+    <div class="section-heading" data-aos="fade-up">
+      <span class="section-badge">Contact</span>
+      <h2>Let's Work Together</h2>
+      <p>Available for freelance projects, consulting, and interesting opportunities.</p>
     </div>
-</section><!-- End Contact Section -->
+
+    <div class="row g-4 align-items-start">
+
+      <!-- Info column -->
+      <div class="col-lg-4" data-aos="fade-right">
+        <div class="contact-card">
+
+          <div class="availability-badge">
+            <span class="availability-dot"></span>
+            <div>
+              <div class="availability-text">Available for Freelance</div>
+              <div class="availability-sub">Typically responds within 24 hours</div>
+            </div>
+          </div>
+
+          <div class="contact-info-item">
+            <div class="contact-info-icon">
+              <i class="fa-solid fa-envelope"></i>
+            </div>
+            <div>
+              <div class="contact-info-label">Email</div>
+              <div class="contact-info-value">
+                <a href="mailto:william0friend@outlook.com">william0friend@outlook.com</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="contact-info-item">
+            <div class="contact-info-icon">
+              <i class="fa-brands fa-linkedin-in"></i>
+            </div>
+            <div>
+              <div class="contact-info-label">LinkedIn</div>
+              <div class="contact-info-value">
+                <a href="{{ site.linkedin_url }}" target="_blank" rel="noopener">william0friend</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="contact-info-item">
+            <div class="contact-info-icon">
+              <i class="fa-brands fa-github"></i>
+            </div>
+            <div>
+              <div class="contact-info-label">GitHub</div>
+              <div class="contact-info-value">
+                <a href="https://github.com/William0Friend" target="_blank" rel="noopener">William0Friend</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="contact-info-item">
+            <div class="contact-info-icon">
+              <i class="fa-solid fa-shield-halved"></i>
+            </div>
+            <div>
+              <div class="contact-info-label">Professional Work</div>
+              <div class="contact-info-value">
+                <a href="{{ site.abuseipdb_url }}" target="_blank" rel="noopener">AbuseIPDB.com</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="contact-socials">
+            <a href="https://github.com/William0Friend" class="contact-social" target="_blank" rel="noopener" title="GitHub">
+              <i class="fa-brands fa-github"></i>
+            </a>
+            <a href="{{ site.linkedin_url }}" class="contact-social" target="_blank" rel="noopener" title="LinkedIn">
+              <i class="fa-brands fa-linkedin-in"></i>
+            </a>
+            <a href="mailto:william0friend@outlook.com" class="contact-social" title="Email">
+              <i class="fa-solid fa-envelope"></i>
+            </a>
+          </div>
+
+        </div>
+      </div>
+
+      <!-- Form column -->
+      <div class="col-lg-8" data-aos="fade-left">
+        <div class="contact-card">
+          <form id="contact-form" class="contact-form">
+            <div class="row g-3">
+              <div class="col-sm-6">
+                <label for="c-name">Your Name</label>
+                <input type="text" id="c-name" class="form-control" placeholder="Jane Smith" required>
+              </div>
+              <div class="col-sm-6">
+                <label for="c-email">Your Email</label>
+                <input type="email" id="c-email" class="form-control" placeholder="jane@company.com" required>
+              </div>
+              <div class="col-12">
+                <label for="c-subject">Subject</label>
+                <input type="text" id="c-subject" class="form-control"
+                       placeholder="Freelance Project Inquiry" value="Freelance Inquiry">
+              </div>
+              <div class="col-12">
+                <label for="c-message">Message</label>
+                <textarea id="c-message" class="form-control"
+                          placeholder="Tell me about your project, timeline, and what you're looking to build..."
+                          required></textarea>
+              </div>
+              <div class="col-12">
+                <button type="submit" class="btn-primary-solid w-100" style="justify-content:center;padding:14px">
+                  <i class="fa-solid fa-paper-plane"></i> Send Message
+                </button>
+                <p class="mt-2 mb-0" style="font-size:0.78rem;color:var(--text-muted);text-align:center">
+                  Submitting will open your email client with this message pre-filled.
+                </p>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>

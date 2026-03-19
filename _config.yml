@@ -1,5 +1,14 @@
+title: William Friend
+tagline: "Software Engineer · Security · AI/ML"
+description: "Full-stack software engineer with 3+ years building threat intelligence platforms, security tooling, and AI integrations. Available for freelance."
+author: William Friend
+email: william0friend@outlook.com
+github_username: William0Friend
+linkedin_url: https://www.linkedin.com/in/william0friend/
+abuseipdb_url: https://www.abuseipdb.com
+
 collections:
-  authors: 
+  authors:
     output: true
 
 defaults:

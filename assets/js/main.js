@@ -1,229 +1,144 @@
-/**
-* Template Name: DevFolio - v4.7.1
-* Template URL: https://bootstrapmade.com/devfolio-bootstrap-portfolio-html-template/
-* Author: BootstrapMade.com
-* License: https://bootstrapmade.com/license/
-*/
-(function() {
-  "use strict";
+/* ================================================================
+   William Friend Portfolio — Main JS
+   ================================================================ */
 
-  /**
-   * Easy selector helper function
-   */
-  const select = (el, all = false) => {
-    el = el.trim()
-    if (all) {
-      return [...document.querySelectorAll(el)]
+/* ── AOS ── */
+AOS.init({ duration: 700, easing: 'ease-out-cubic', once: true, offset: 60 });
+
+/* ── Swiper (featured projects carousel) ── */
+new Swiper('.projects-swiper', {
+  slidesPerView: 1,
+  spaceBetween: 24,
+  loop: true,
+  autoplay: { delay: 4500, disableOnInteraction: false, pauseOnMouseEnter: true },
+  pagination: { el: '.swiper-pagination', clickable: true },
+  navigation: { nextEl: '.swiper-button-next', prevEl: '.swiper-button-prev' },
+  breakpoints: {
+    640:  { slidesPerView: 1 },
+    768:  { slidesPerView: 2 },
+    1100: { slidesPerView: 3 },
+  }
+});
+
+/* ── Sticky navbar ── */
+const nav = document.getElementById('main-nav');
+const onScroll = () => nav && nav.classList.toggle('scrolled', window.scrollY > 50);
+window.addEventListener('scroll', onScroll, { passive: true });
+onScroll();
+
+/* ── Active nav link on scroll ── */
+const sections  = document.querySelectorAll('section[id]');
+const navLinks  = document.querySelectorAll('.navbar-nav .nav-link[href^="#"]');
+window.addEventListener('scroll', () => {
+  let current = '';
+  sections.forEach(s => { if (window.scrollY >= s.offsetTop - 100) current = s.id; });
+  navLinks.forEach(a => a.classList.toggle('active', a.getAttribute('href') === '#' + current));
+}, { passive: true });
+
+/* ── Smooth scroll ── */
+document.querySelectorAll('a[href^="#"]').forEach(a => {
+  a.addEventListener('click', e => {
+    const target = document.querySelector(a.getAttribute('href'));
+    if (!target) return;
+    e.preventDefault();
+    target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+    const collapse = document.getElementById('navbarNav');
+    if (collapse && collapse.classList.contains('show')) {
+      const inst = bootstrap.Collapse.getInstance(collapse);
+      if (inst) inst.hide();
+    }
+  });
+});
+
+/* ── Typed text ── */
+const typedEl = document.getElementById('typed-text');
+if (typedEl) {
+  const phrases = [
+    'Software Engineer',
+    'Security Engineer',
+    'AI/ML Developer',
+    'Full-Stack Dev',
+    'Open Source Contributor',
+    'Threat Intel Builder',
+  ];
+  let pi = 0, ci = 0, deleting = false;
+  function typeLoop() {
+    const phrase = phrases[pi];
+    if (!deleting) {
+      typedEl.textContent = phrase.slice(0, ++ci);
+      if (ci === phrase.length) { deleting = true; setTimeout(typeLoop, 2200); return; }
     } else {
-      return document.querySelector(el)
+      typedEl.textContent = phrase.slice(0, --ci);
+      if (ci === 0) { deleting = false; pi = (pi + 1) % phrases.length; }
     }
+    setTimeout(typeLoop, deleting ? 55 : 100);
   }
+  setTimeout(typeLoop, 900);
+}
 
-  /**
-   * Easy event listener function
-   */
-  const on = (type, el, listener, all = false) => {
-    let selectEl = select(el, all)
-    if (selectEl) {
-      if (all) {
-        selectEl.forEach(e => e.addEventListener(type, listener))
-      } else {
-        selectEl.addEventListener(type, listener)
-      }
-    }
-  }
+/* ── GitHub Repos Grid ── */
+const GITHUB_USER = 'William0Friend';
+const LANG_COLORS = {
+  JavaScript: '#f1e05a', Python: '#3572A5', PHP: '#4F5D95',
+  TypeScript: '#2b7489', Shell: '#89e051', HTML: '#e34c26',
+  CSS: '#563d7c', Java: '#b07219', C: '#555555', 'C++': '#f34b7d',
+  Ruby: '#701516', 'C#': '#178600', 'Jupyter Notebook': '#DA5B0B',
+  Assembly: '#6E4C13', SCSS: '#c6538c', Blade: '#f7523f',
+  Mathematica: '#dd1100', Perl: '#0298c3',
+};
 
-  /**
-   * Easy on scroll event listener 
-   */
-  const onscroll = (el, listener) => {
-    el.addEventListener('scroll', listener)
-  }
-
-  /**
-   * Navbar links active state on scroll
-   */
-  let navbarlinks = select('#navbar .scrollto', true)
-  const navbarlinksActive = () => {
-    let position = window.scrollY + 200
-    navbarlinks.forEach(navbarlink => {
-      if (!navbarlink.hash) return
-      let section = select(navbarlink.hash)
-      if (!section) return
-      if (position >= section.offsetTop && position <= (section.offsetTop + section.offsetHeight)) {
-        navbarlink.classList.add('active')
-      } else {
-        navbarlink.classList.remove('active')
-      }
+const reposGrid = document.getElementById('repos-grid');
+if (reposGrid) {
+  fetch('https://api.github.com/users/' + GITHUB_USER + '/repos?sort=updated&per_page=30&type=public')
+    .then(function(r) { return r.json(); })
+    .then(function(repos) {
+      if (!Array.isArray(repos)) throw new Error('bad response');
+      var show = repos
+        .filter(function(r) {
+          return !r.fork && r.name !== GITHUB_USER + '.github.io' && r.name !== GITHUB_USER;
+        })
+        .slice(0, 12);
+      reposGrid.innerHTML = show.map(function(r, idx) {
+        var color   = LANG_COLORS[r.language] || '#8b949e';
+        var lang    = r.language || 'Various';
+        var desc    = r.description
+          ? (r.description.length > 88 ? r.description.slice(0, 88) + '\u2026' : r.description)
+          : 'No description provided.';
+        var updated = new Date(r.updated_at).toLocaleDateString('en-US', { month: 'short', year: 'numeric' });
+        var delay   = (idx % 3) * 80;
+        return '<a href="' + r.html_url + '" target="_blank" rel="noopener noreferrer"' +
+          ' class="repo-card" data-aos="fade-up" data-aos-delay="' + delay + '">' +
+          '<div class="repo-card-header">' +
+          '<i class="fa-regular fa-folder-open"></i>' +
+          '<span class="repo-stars"><i class="fa-solid fa-star"></i>&nbsp;' + r.stargazers_count + '</span>' +
+          '</div>' +
+          '<h4 class="repo-name">' + r.name + '</h4>' +
+          '<p class="repo-desc">' + desc + '</p>' +
+          '<div class="repo-footer">' +
+          '<span class="repo-lang"><span class="lang-dot" style="background:' + color + '"></span>' + lang + '</span>' +
+          '<span class="repo-updated">' + updated + '</span>' +
+          '</div></a>';
+      }).join('');
     })
-  }
-  window.addEventListener('load', navbarlinksActive)
-  onscroll(document, navbarlinksActive)
-
-  /**
-   * Scrolls to an element with header offset
-   */
-  const scrollto = (el) => {
-    let header = select('#header')
-    let offset = header.offsetHeight
-
-    if (!header.classList.contains('header-scrolled')) {
-      offset -= 16
-    }
-
-    let elementPos = select(el).offsetTop
-    window.scrollTo({
-      top: elementPos - offset,
-      behavior: 'smooth'
-    })
-  }
-
-  /**
-   * Toggle .header-scrolled class to #header when page is scrolled
-   */
-  let selectHeader = select('#header')
-  if (selectHeader) {
-    const headerScrolled = () => {
-      if (window.scrollY > 100) {
-        selectHeader.classList.add('header-scrolled')
-      } else {
-        selectHeader.classList.remove('header-scrolled')
-      }
-    }
-    window.addEventListener('load', headerScrolled)
-    onscroll(document, headerScrolled)
-  }
-
-  /**
-   * Back to top button
-   */
-  let backtotop = select('.back-to-top')
-  if (backtotop) {
-    const toggleBacktotop = () => {
-      if (window.scrollY > 100) {
-        backtotop.classList.add('active')
-      } else {
-        backtotop.classList.remove('active')
-      }
-    }
-    window.addEventListener('load', toggleBacktotop)
-    onscroll(document, toggleBacktotop)
-  }
-
-  /**
-   * Mobile nav toggle
-   */
-  on('click', '.mobile-nav-toggle', function(e) {
-    select('#navbar').classList.toggle('navbar-mobile')
-    this.classList.toggle('bi-list')
-    this.classList.toggle('bi-x')
-  })
-
-  /**
-   * Mobile nav dropdowns activate
-   */
-  on('click', '.navbar .dropdown > a', function(e) {
-    if (select('#navbar').classList.contains('navbar-mobile')) {
-      e.preventDefault()
-      this.nextElementSibling.classList.toggle('dropdown-active')
-    }
-  }, true)
-
-  /**
-   * Scrool with ofset on links with a class name .scrollto
-   */
-  on('click', '.scrollto', function(e) {
-    if (select(this.hash)) {
-      e.preventDefault()
-
-      let navbar = select('#navbar')
-      if (navbar.classList.contains('navbar-mobile')) {
-        navbar.classList.remove('navbar-mobile')
-        let navbarToggle = select('.mobile-nav-toggle')
-        navbarToggle.classList.toggle('bi-list')
-        navbarToggle.classList.toggle('bi-x')
-      }
-      scrollto(this.hash)
-    }
-  }, true)
-
-  /**
-   * Scroll with ofset on page load with hash links in the url
-   */
-  window.addEventListener('load', () => {
-    if (window.location.hash) {
-      if (select(window.location.hash)) {
-        scrollto(window.location.hash)
-      }
-    }
-  });
-
-  /**
-   * Intro type effect
-   */
-  const typed = select('.typed')
-  if (typed) {
-    let typed_strings = typed.getAttribute('data-typed-items')
-    typed_strings = typed_strings.split(',')
-    new Typed('.typed', {
-      strings: typed_strings,
-      loop: true,
-      typeSpeed: 100,
-      backSpeed: 50,
-      backDelay: 2000
+    .catch(function() {
+      reposGrid.innerHTML =
+        '<div style="grid-column:1/-1;text-align:center;padding:2rem">' +
+        '<p style="color:var(--text-muted);margin-bottom:1rem">Couldn\'t load repos — view them directly on GitHub.</p>' +
+        '<a href="https://github.com/' + GITHUB_USER + '" class="btn-primary-solid" target="_blank" rel="noopener">' +
+        '<i class="fa-brands fa-github"></i> View on GitHub</a></div>';
     });
-  }
+}
 
-  /**
-   * Initiate portfolio lightbox 
-   */
-  const portfolioLightbox = GLightbox({
-    selector: '.portfolio-lightbox'
+/* ── Contact form → mailto ── */
+var contactForm = document.getElementById('contact-form');
+if (contactForm) {
+  contactForm.addEventListener('submit', function(e) {
+    e.preventDefault();
+    var name    = document.getElementById('c-name').value;
+    var email   = document.getElementById('c-email').value;
+    var subject = encodeURIComponent(document.getElementById('c-subject').value || 'Freelance Inquiry');
+    var message = document.getElementById('c-message').value;
+    var body    = encodeURIComponent('Hi William,\n\n' + message + '\n\n---\nFrom: ' + name + '\nReply-to: ' + email);
+    window.location.href = 'mailto:william0friend@outlook.com?subject=' + subject + '&body=' + body;
   });
-
-  /**
-   * Testimonials slider
-   */
-  new Swiper('.testimonials-slider', {
-    speed: 600,
-    loop: true,
-    autoplay: {
-      delay: 5000,
-      disableOnInteraction: false
-    },
-    slidesPerView: 'auto',
-    pagination: {
-      el: '.swiper-pagination',
-      type: 'bullets',
-      clickable: true
-    }
-  });
-
-  /**
-   * Portfolio details slider
-   */
-  new Swiper('.portfolio-details-slider', {
-    speed: 400,
-    loop: true,
-    autoplay: {
-      delay: 5000,
-      disableOnInteraction: false
-    },
-    pagination: {
-      el: '.swiper-pagination',
-      type: 'bullets',
-      clickable: true
-    }
-  });
-
-  /**
-   * Preloader
-   */
-  let preloader = select('#preloader');
-  if (preloader) {
-    window.addEventListener('load', () => {
-      preloader.remove()
-    });
-  }
-
-})()
+}
