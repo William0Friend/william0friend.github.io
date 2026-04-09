@@ -139,6 +139,6 @@ if (contactForm) {
     var subject = encodeURIComponent(document.getElementById('c-subject').value || 'Freelance Inquiry');
     var message = document.getElementById('c-message').value;
     var body    = encodeURIComponent('Hi William,\n\n' + message + '\n\n---\nFrom: ' + name + '\nReply-to: ' + email);
-    window.location.href = 'mailto:william0friend@outlook.com?subject=' + subject + '&body=' + body;
+    window.location.href = 'mailto:william0friend@gmail.com?subject=' + subject + '&body=' + body;
   });
 }

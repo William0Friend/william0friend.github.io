@@ -54,7 +54,7 @@ Single-page portfolio site built with Jekyll 4.2 deployed to GitHub Pages.
 ## Key details
 
 - **GitHub API**: repos grid at `#open-source` fetches `api.github.com/users/William0Friend/repos` client-side, no auth, max 12 public non-fork repos.
-- **Contact**: mailto form — submitting pre-fills the user's email client. Email: `william0friend@outlook.com`.
+- **Contact**: mailto form — submitting pre-fills the user's email client. Email: `william0friend@gmail.com`.
 - **Three.js importmap** must stay in `<head>` (head.html) before any `<script type="module">` tags. Don't move it to body.
 - **Jekyll plugins** (jekyll-feed, jekyll-sitemap, jekyll-seo-tag) are all on the GitHub Pages allowlist.
 - `_site/` and `.jekyll-cache/` are gitignored build artifacts.
